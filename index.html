@@ -147,6 +147,182 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://silence-create.github.io/mybook.github.io/2024/05/20/C++/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/mybook.github.io/images/avatar.gif">
+      <meta itemprop="name" content="徐川">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="依只若只的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/mybook.github.io/2024/05/20/C++/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-05-20 12:01:11 / 修改时间：12:02:22" itemprop="dateCreated datePublished" datetime="2024-05-20T12:01:11+08:00">2024-05-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h1><h2 id="C-C-内存分布"><a href="#C-C-内存分布" class="headerlink" title="C&#x2F;C++内存分布"></a>C&#x2F;C++内存分布</h2><p>BSS段（bss）：通常是指用来存放程序中未初始化的全局变量的一块内存区域。BSS段属于静态内存分配。<br>数据段（data）：通常是指用来存放程序中已初始化的全局变量的一块内存区域。数据段属于静态内存分配。<br>全局数据区(静态存储区)：全局变量和静态变量的存储是放在一块的，初始化的全局变量和静态变量在一块区域，未初始化的全局变量和未初始化的静态变量在相邻的另一块区域。程序结束释放。<br>代码段（code &#x2F;text）：通常是指用来存放程序执行代码的一块内存区域。这部分区域的大小在程序运行前就已经确定，并且内存区域通常属于只读, 某些架构也允许代码段为可写，即允许修改程序。在代码段中，也有可能包含一些只读的常数变量，例如字符串常量等。<br>堆（heap）：堆是用于存放进程运行中被动态分配的内存段，它的大小并不固定，可动态扩张或缩减。当进程调用malloc等函数分配内存时，新分配的内存就被动态添加到堆上（堆被扩张）；当利用free等函数释放内存时，被释放的内存从堆中被剔除（堆被缩减）<br>栈(stack)：存放函数的局部变量、函数参数、返回地址等，由编译器自动分配和释放，是用户存放程序临时创建的局部变量，也就是说我们函数括弧“{}”中定义的变量（但不包括static声明的变量，static意味着在数据段中存放变量）。除此以外，在函数被调用时，其参数也会被压入发起调用的进程栈中，并且待到调用结束后，函数的返回值也会被存放回栈中。由于栈的先进先出特点，所以栈特别方便用来保存&#x2F;恢复调用现场。从这个意义上讲，我们可以把堆栈看成一个寄存、交换临时数据的内存区。<br>从操作系统的本身来讲，以上存储区在内存中的分布是如下形式(从低地址到高地址)：.text 段 –&gt; .data 段 –&gt; .bss 段 –&gt; 堆 –&gt; unused –&gt; 栈 –&gt; env</p>
+<h1 id="—————–请稍等———————–"><a href="#—————–请稍等———————–" class="headerlink" title="—————–请稍等———————–"></a>—————–请稍等———————–</h1><link rel="stylesheet" href="/mybook.github.io/css/spoiler.css" type="text/css"><script src="/mybook.github.io/js/spoiler.js" type="text/javascript" async></script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://silence-create.github.io/mybook.github.io/2024/05/20/Go/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/mybook.github.io/images/avatar.gif">
+      <meta itemprop="name" content="徐川">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="依只若只的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/mybook.github.io/2024/05/20/Go/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-05-20 12:01:11 / 修改时间：12:01:01" itemprop="dateCreated datePublished" datetime="2024-05-20T12:01:11+08:00">2024-05-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Golang"><a href="#Golang" class="headerlink" title="Golang"></a>Golang</h1><h2 id="数值（-16-个）"><a href="#数值（-16-个）" class="headerlink" title="数值（ 16 个）"></a>数值（ 16 个）</h2><h3 id="整型（-12-个）"><a href="#整型（-12-个）" class="headerlink" title="整型（ 12 个）"></a>整型（ 12 个）</h3><p>byte int int8 int16 int32 int64 </p>
+<p>uint unint8 uint16 uint32 uint64 uintprt </p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">uint8</td>
+<td align="center">0 到 255</td>
+</tr>
+<tr>
+<td align="center">uint16</td>
+<td align="center">0 到 65535</td>
+</tr>
+<tr>
+<td align="center">uint32</td>
+<td align="center">0 到 4294967295</td>
+</tr>
+<tr>
+<td align="center">unit64</td>
+<td align="center">(0 到 18446744073709551615)</td>
+</tr>
+<tr>
+<td align="center">int8</td>
+<td align="center">-128 到 127</td>
+</tr>
+<tr>
+<td align="center">int16</td>
+<td align="center">-32768 到 32767</td>
+</tr>
+<tr>
+<td align="center">int32</td>
+<td align="center">-2147483648 到 2147483647</td>
+</tr>
+<tr>
+<td align="center">int64</td>
+<td align="center">(-9223372036854775808 到 9223372036854775807)</td>
+</tr>
+</tbody></table>
+<h3 id="浮点型（-2个）"><a href="#浮点型（-2个）" class="headerlink" title="浮点型（ 2个）"></a>浮点型（ 2个）</h3><p>float32 float64 </p>
+<h3 id="复数型（-2个）"><a href="#复数型（-2个）" class="headerlink" title="复数型（ 2个）"></a>复数型（ 2个）</h3><p>complex64    complex128 </p>
+<h3 id="字符和字符串型（-2个）"><a href="#字符和字符串型（-2个）" class="headerlink" title="字符和字符串型（ 2个）"></a>字符和字符串型（ 2个）</h3><p>string   rune </p>
+<h3 id="接口型（-1个）"><a href="#接口型（-1个）" class="headerlink" title="接口型（ 1个）"></a>接口型（ 1个）</h3><p>error </p>
+<h3 id="布尔型（1个）"><a href="#布尔型（1个）" class="headerlink" title="布尔型（1个）"></a>布尔型（1个）</h3><p>bool </p>
+<p>token 是构成源程序的基本不可再分割的单元。</p>
+<p>变量表示指向的内存可以被修改，常量表示指向的内存不能被修改。</p>
+<p>需要注意的是 { 不能单独放在一行，在运行时会产生错误</p>
+<p>字符串是常量，可以通过类 数组 索引访问其字节单元，但是不能修改某个字节的值。</p>
+<p>Go语言基本的复合数据类型有指针、数组、切片、字典（ map ）、通道、结构和接口，它们的字面量格式如下&#96;</p>
+<p> :&#x3D; 是一个声明语句。intVal :&#x3D; 1 相等于：</p>
+<p>Go 函数可以返回多个值</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var intVal int </span><br><span class="line">intVal =1 </span><br></pre></td></tr></table></figure>
+
+<p>可以将 var f string &#x3D; “Runoob” 简写为 f :&#x3D; “Runoob”：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">pointerType  	／／指针类型使用＊后面跟其指向的类型名</span><br><span class="line">[n] elementType 	／／数纽类型使用［ ）后面跟数纽元素类型来表示， 表示该数组的长度</span><br><span class="line">[] elementType 		／／ 切片类型使用［］后面跟切片元素类型来表示</span><br><span class="line">map [keyType)valueType 	//map 类型使用 map ［键类型］值类型来表</span><br><span class="line">chan valueType 	／／通道使 ch an 后面跟远远元素类型来表示</span><br><span class="line">struct &#123; 	／／结构类型使 str uct ｛｝将各个结构字段扩起来表示</span><br><span class="line">    feildType feildType</span><br><span class="line">    feildType feildType </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">interface ｛／／接 口类型使用 interface ｛｝将各个方法括起来表示</span><br><span class="line">methodl ( inputParams) ( returnParams)</span><br><span class="line">method2 (inputParams) (returnParams)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="———-请稍等————–"><a href="#———-请稍等————–" class="headerlink" title="———-请稍等————–"></a>———-请稍等————–</h1><link rel="stylesheet" href="/mybook.github.io/css/spoiler.css" type="text/css"><script src="/mybook.github.io/js/spoiler.js" type="text/javascript" async></script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://silence-create.github.io/mybook.github.io/2024/05/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2727,7 +2903,7 @@ sizeof(A) &#x3D; 8;sizeof(B) &#x3D; 12。</li>
       <div class="site-state-item site-state-posts">
           <a href="/mybook.github.io/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
