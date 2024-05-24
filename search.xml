@@ -1,289 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Golang</title>
-    <url>/mybook.github.io/2024/05/20/Go/</url>
-    <content><![CDATA[<h1 id="Golang"><a href="#Golang" class="headerlink" title="Golang"></a>Golang</h1><h2 id="数值（-16-个）"><a href="#数值（-16-个）" class="headerlink" title="数值（ 16 个）"></a>数值（ 16 个）</h2><h3 id="整型（-12-个）"><a href="#整型（-12-个）" class="headerlink" title="整型（ 12 个）"></a>整型（ 12 个）</h3><p>byte int int8 int16 int32 int64 </p>
-<p>uint unint8 uint16 uint32 uint64 uintprt </p>
-<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">uint8</td>
-<td align="center">0 到 255</td>
-</tr>
-<tr>
-<td align="center">uint16</td>
-<td align="center">0 到 65535</td>
-</tr>
-<tr>
-<td align="center">uint32</td>
-<td align="center">0 到 4294967295</td>
-</tr>
-<tr>
-<td align="center">unit64</td>
-<td align="center">(0 到 18446744073709551615)</td>
-</tr>
-<tr>
-<td align="center">int8</td>
-<td align="center">-128 到 127</td>
-</tr>
-<tr>
-<td align="center">int16</td>
-<td align="center">-32768 到 32767</td>
-</tr>
-<tr>
-<td align="center">int32</td>
-<td align="center">-2147483648 到 2147483647</td>
-</tr>
-<tr>
-<td align="center">int64</td>
-<td align="center">(-9223372036854775808 到 9223372036854775807)</td>
-</tr>
-</tbody></table>
-<h3 id="浮点型（-2个）"><a href="#浮点型（-2个）" class="headerlink" title="浮点型（ 2个）"></a>浮点型（ 2个）</h3><p>float32 float64 </p>
-<h3 id="复数型（-2个）"><a href="#复数型（-2个）" class="headerlink" title="复数型（ 2个）"></a>复数型（ 2个）</h3><p>complex64    complex128 </p>
-<h3 id="字符和字符串型（-2个）"><a href="#字符和字符串型（-2个）" class="headerlink" title="字符和字符串型（ 2个）"></a>字符和字符串型（ 2个）</h3><p>string   rune </p>
-<h3 id="接口型（-1个）"><a href="#接口型（-1个）" class="headerlink" title="接口型（ 1个）"></a>接口型（ 1个）</h3><p>error </p>
-<h3 id="布尔型（1个）"><a href="#布尔型（1个）" class="headerlink" title="布尔型（1个）"></a>布尔型（1个）</h3><p>bool </p>
-<p>token 是构成源程序的基本不可再分割的单元。</p>
-<p>变量表示指向的内存可以被修改，常量表示指向的内存不能被修改。</p>
-<p>需要注意的是 { 不能单独放在一行，在运行时会产生错误</p>
-<p>字符串是常量，可以通过类 数组 索引访问其字节单元，但是不能修改某个字节的值。</p>
-<p>Go语言基本的复合数据类型有指针、数组、切片、字典（ map ）、通道、结构和接口，它们的字面量格式如下&#96;</p>
-<p> :&#x3D; 是一个声明语句。intVal :&#x3D; 1 相等于：</p>
-<p>Go 函数可以返回多个值</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var intVal int </span><br><span class="line">intVal =1 </span><br></pre></td></tr></table></figure>
-
-<p>可以将 var f string &#x3D; “Runoob” 简写为 f :&#x3D; “Runoob”：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pointerType  	／／指针类型使用＊后面跟其指向的类型名</span><br><span class="line">[n] elementType 	／／数纽类型使用［ ）后面跟数纽元素类型来表示， 表示该数组的长度</span><br><span class="line">[] elementType 		／／ 切片类型使用［］后面跟切片元素类型来表示</span><br><span class="line">map [keyType)valueType 	//map 类型使用 map ［键类型］值类型来表</span><br><span class="line">chan valueType 	／／通道使 ch an 后面跟远远元素类型来表示</span><br><span class="line">struct &#123; 	／／结构类型使 str uct ｛｝将各个结构字段扩起来表示</span><br><span class="line">    feildType feildType</span><br><span class="line">    feildType feildType </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">interface ｛／／接 口类型使用 interface ｛｝将各个方法括起来表示</span><br><span class="line">methodl ( inputParams) ( returnParams)</span><br><span class="line">method2 (inputParams) (returnParams)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<center><font size="32">------赞助耶耶，加快更新！------</font></center>
-
-<p> <img data-src="/mybook.github.io/images/donate_jpg.jpg"></p>
-<link rel="stylesheet" href="/mybook.github.io/css/spoiler.css" type="text/css"><script src="/mybook.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>语言</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Mysql</title>
-    <url>/mybook.github.io/2024/05/22/Mysql/</url>
-    <content><![CDATA[<h1 id="sql分类"><a href="#sql分类" class="headerlink" title="sql分类"></a>sql分类</h1><p>DDL中常用的命令有：create，drop，alter，truncate、rename<br>DML中常用的命令有：insert，update，delete、select</p>
-<h1 id="数据库三大范式"><a href="#数据库三大范式" class="headerlink" title="数据库三大范式"></a>数据库三大范式</h1><h2 id="第一范式（1NF）"><a href="#第一范式（1NF）" class="headerlink" title="第一范式（1NF）"></a>第一范式（1NF）</h2><p><mark>列不可再分</mark><br>每一列属性都是不可再分的属性值，确保每一列的原子性</p>
-<h2 id="第二范式（2NF）"><a href="#第二范式（2NF）" class="headerlink" title="第二范式（2NF）"></a>第二范式（2NF）</h2><p><mark>属性完全依赖于主键</mark><br>第二范式需要确保数据库表中的每一列都和主键相关，而不能只与主键的某一部分相关（主要针对联合主键而言）。也就是说在一个数据库表中，一个表中只能保存一种数据，不可以把多种数据保存在同一张数据库表中。</p>
-<h2 id="第三范式（3NF）"><a href="#第三范式（3NF）" class="headerlink" title="第三范式（3NF）"></a>第三范式（3NF）</h2><p><mark>属性不依赖于其它非主属性    属性直接依赖于主键</mark><br>数据不能存在传递关系，需要确保数据表中的每一列数据都和主键直接相关，而不能间接相关。像：a–&gt;b–&gt;c  属性之间含有这样的关系，是不符合第三范式的。</p>
-<h1 id="四种特性"><a href="#四种特性" class="headerlink" title="四种特性"></a>四种特性</h1><ol>
-<li>原子性（Atomicity）<br>原子性是指事务包含的所有操作要么全部成功，要么全部失败回滚，因此事务的操作如果成功就必须要完全应用到数据库，如果操作失败则不能对数据库有任何影响。</li>
-<li>一致性（Consistency）<br>一致性是指事务必须使数据库从一个一致性状态变换到另一个一致性状态，也就是说一个事务执行之前和执行之后都必须处于一致性状态。<br>拿转账来说，假设用户A和用户B两者的钱加起来一共是5000，那么不管A和B之间如何转账，转几次账，事务结束后两个用户的钱相加起来应该还得是5000，这就是事务的一致性。</li>
-<li>隔离性（Isolation）<br>隔离性是当多个用户并发访问数据库时，比如操作同一张表时，数据库为每一个用户开启的事务，不能被其他事务的操作所干扰，多个并发事务之间要相互隔离。</li>
-<li>持久性（Durability）<br>持久性是指一个事务一旦被提交了，那么对数据库中的数据的改变就是永久性的，即便是在数据库系统遇到故障的情况下也不会丢失提交事务的操作。</li>
-</ol>
-<h1 id="聚集索引和非聚集索引"><a href="#聚集索引和非聚集索引" class="headerlink" title="聚集索引和非聚集索引"></a>聚集索引和非聚集索引</h1><ul>
-<li>聚集索引一个表只能有一个，而非聚集索引一个表可以存在多个</li>
-<li>聚集索引存储记录是物理上连续存在，而非聚集索引是逻辑上的连续，物理存储并不连续</li>
-<li>聚集索引:物理存储按照索引排序；聚集索引是一种索引组织形式，索引的键值逻辑顺序决定了表数据行的物理存储顺序。<br>非聚集索引:物理存储不按照索引排序；非聚集索引则就是普通索引了，仅仅只是对数据列创建相应的索引，不影响整个表的物理存储顺序。</li>
-<li>聚集索引的叶节点就是数据节点。而非聚簇索引的叶节点仍然是索引节点，只不过有一个指针指向对应的数据块。</li>
-</ul>
-<h2 id="主键索引与聚集索引的区别"><a href="#主键索引与聚集索引的区别" class="headerlink" title="主键索引与聚集索引的区别"></a>主键索引与聚集索引的区别</h2><p>innodb引擎里面，主键的确就是聚集索引，但是myisam引擎里面主键也不是聚集索引。<br><mark>聚集索引决定了数据库的物理存储结构，而主键只是确定表格逻辑组织方式。这两者不可混淆</mark><br>对于Innodb：</p>
-<ol>
-<li>如果一个主键被定义了，那么这个主键就是作为聚集索引</li>
-<li>如果没有主键被定义，那么该表的第一个唯一非空索引被作为聚集索引</li>
-<li>如果没有主键也没有合适的唯一索引，那么innodb内部会生成一个隐藏的主键作为聚集索引，这个隐藏的主键是每行数据内置的6字节ROWID，该列的值会随着数据的插入自增。</li>
-</ol>
-<h1 id="事务隔离级别"><a href="#事务隔离级别" class="headerlink" title="事务隔离级别"></a>事务隔离级别</h1><ol>
-<li>脏读<br>脏读是指在一个事务处理过程里读取了另一个未提交的事务中的数据。因为另外一个事务还没提交，所以它随时可能会回滚，那么必然导致你更新的数据就没了。<br>当一个事务正在多次修改某个数据，而在这个事务中这多次的修改都还未提交，这时一个并发的事务来访问该数据，就会造成两个事务得到的数据不一致</li>
-<li>不可重复读<br>不可重复读是指在对于数据库中的某个数据，一个事务范围内多次查询却返回了不同的数据值，这是由于在查询间隔，被另一个事务修改并提交了。<br>例如事务T1在读取某一数据，而事务T2立马修改了这个数据并且提交事务给数据库，事务T1再次读取该数据就得到了不同的结果，发送了不可重复读。<br><mark>不可重复读和脏读的区别是，脏读是某一事务读取了另一个事务未提交的脏数据，而不可重复读则是读取了前一事务提交的数据。</mark></li>
-<li>虚读(幻读)<br>幻读是事务非独立执行时发生的一种现象。例如事务T1对一个表中所有的行的某个数据项做了从“1”修改为“2”的操作，这时事务T2又对这个表中插入了一行数据项，而这个数据项的数值还是为“1”并且提交给数据库。而操作事务T1的用户如果再查看刚刚修改的数据，会发现还有一行没有修改，其实这行是从事务T2中添加的，就好像产生幻觉一样，这就是发生了幻读。<br><mark>幻读和不可重复读都是读取了另一条已经提交的事务（这点就脏读不同），所不同的是不可重复读查询的都是同一个数据项，而幻读针对的是一批数据整体（比如数据的个数）。</mark></li>
-</ol>
-<p>现在来看看MySQL数据库为我们提供的四种隔离级别：<br>① Serializable (串行化)：可避免脏读、不可重复读、幻读的发生。<br>② Repeatable read (可重复读)：可避免脏读、不可重复读的发生。<br>③ Read committed (读已提交)：可避免脏读的发生。<br>④ Read uncommitted (读未提交)：最低级别，任何情况都无法保证。<br>设置数据库的隔离级别一定要是在开启事务之前！<br>Mysql 默认采用的②Repeatable read隔离级别 </p>
-<h1 id="索引与B-树"><a href="#索引与B-树" class="headerlink" title="索引与B+树"></a>索引与B+树</h1><h2 id="为什么数据库索引使用B-树"><a href="#为什么数据库索引使用B-树" class="headerlink" title="为什么数据库索引使用B+树"></a>为什么数据库索引使用B+树</h2><ul>
-<li><p>MySQL中的数据一般是放在磁盘中的，读取数据的时候肯定会有访问磁盘的操作，磁盘中有两个机械运动的部分，分别是盘片旋转和磁臂移动。盘片旋转就是我们市面上所提到的多少转每分钟，而磁盘移动则是在盘片旋转到指定位置以后，移动磁臂后开始进行数据的读写。</p>
-</li>
-<li><p>那么这就存在一个定位到磁盘中的块的过程，而定位是磁盘的存取中花费时间比较大的一块，毕竟机械运动花费的时候要远远大于电子运动的时间。当大规模数据存储到磁盘中的时候，显然定位是一个非常花费时间的过程，但是我们可以通过B树进行优化，提高磁盘读取时定位的效率。</p>
-</li>
-<li><p>尽量多的在结点上存储相关的信息，保证层数尽量的少，以便后面我们可以更快的找到信息，磁盘的I&#x2F;O操作也少一些，而且B+树是平衡树，每个结点到叶子结点的高度都是相同，这也保证了每个查询是稳定的。一颗B&#x2F;B+树的高度远远小于红黑树的高度。B+树上操作的时间通常由存取磁盘的时间和CPU计算时间这两部分构成，而CPU的速度非常快，所以<mark>B树的操作效率取决于访问磁盘的次数</mark>，B树的高度越小，磁盘I&#x2F;O所花的时间越少。</p>
-</li>
-</ul>
-<h2 id="为什么说B-树比B树更适合数据库索引"><a href="#为什么说B-树比B树更适合数据库索引" class="headerlink" title="为什么说B+树比B树更适合数据库索引"></a>为什么说B+树比B树更适合数据库索引</h2><ol>
-<li><p>B+树的查询效率更加稳定：由于非终结点并不是最终指向文件内容的结点，而只是叶子结点中关键字的索引。所以任何关键字的查找必须走一条从根结点到叶子结点的路。所有关键字查询的路径长度相同，导致每一个数据的查询效率相当。</p>
-</li>
-<li><p>由于B+树的数据都存储在叶子结点中，分支结点均为索引，方便扫库，只需要扫一遍叶子结点即可，但是B树因为其分支结点同样存储着数据，我们要找到具体的数据，需要进行一次中序遍历按序来扫，例如数据库中select数据，很多时候会选多条，比如按照id排序后选10条。B树需要做局部的中序遍历，可能要跨层访问。而B+树由于所有数据都在叶子结点，不用跨层，同时由于有链表结构，只需要找到首尾，通过链表就能把所有数据取出来了。所以B+树更加适合在区间查询的情况，所以通常B+树用于数据库索引。</p>
-</li>
-</ol>
-<h2 id="为什么数据库索引不采用hash"><a href="#为什么数据库索引不采用hash" class="headerlink" title="为什么数据库索引不采用hash"></a>为什么数据库索引不采用hash</h2><ol>
-<li>hash不能进行范围查找 如果只选一个数据，那确实是hash更快。但是数据库中经常会选择多条，这时候由于B+树索引有序，并且又有链表相连，它的查询效率比hash就快很多了。</li>
-<li>数据库中的索引一般是在磁盘上，使用hash时，数据量大的情况可能无法一次装入内存，B+树的设计可以允许数据分批加载，同时树的高度较低，提高查找效率。</li>
-<li>当数据量很大时，hash冲突的概率也会非常大</li>
-</ol>
-<h1 id="数据库内存技术"><a href="#数据库内存技术" class="headerlink" title="数据库内存技术"></a>数据库内存技术</h1><h2 id="缓冲池"><a href="#缓冲池" class="headerlink" title="缓冲池"></a>缓冲池</h2><p><img data-src="/mybook.github.io/vx_images/173992495713.png"></p>
-<ul>
-<li>由于CPU速度和磁盘速度的鸿沟，使用缓冲池提高数据库性能，</li>
-<li>在数据库中进行读取页的操作，首先将从磁盘读到的页存放在缓冲池中，下一次再读相同的页时，首先判断该页是否在缓冲池中。若在缓冲池中，称该页在缓冲池中被命中，直接读取该页。否则，读取磁盘上的页。</li>
-<li>页从缓冲池刷新回磁盘的操作并不是在每次页发生更新时触发，而是通过Checkpoint的机制刷新回磁盘</li>
-</ul>
-<h2 id="LRU-list"><a href="#LRU-list" class="headerlink" title="LRU list"></a>LRU list</h2><p>最近最少使用算法</p>
-<ul>
-<li>最频繁使用的页在LRU列表的前端，最少使用的在LRU列表的尾端，首先释放LRU尾端的页</li>
-<li>在 InnoDB的存储引擎中，LRU列表中还加入了midpoint位置。新读取到的页，虽然是最新访问的页，但并不是直接放入到LRU列表的首部，而是放入到LRU列表的midpoint 位置。在默认配置下，该位置在LRU列表长度的5／8处。</li>
-<li><mark>为什么不采用朴素的LRU算法，直接将读取的页放人到LRU列表的首部呢？</mark><br>常见的这类操作为索引或数据的扫描操作。这类操作需要访问表中的许多页，甚至是全部的页，而这些页通常来说又仅在这次查询操作中需要，并不是活跃的热点数据。如果页被放入LRU列表的首部，那么非常可能将所需要的热点数据页从LRU列表中移除，而在下一次需要读取该页时，InnoDB存储引擎需要再次访问磁盘，从而影响缓冲池的效率。</li>
-</ul>
-<h2 id="Free-list"><a href="#Free-list" class="headerlink" title="Free list"></a>Free list</h2><ul>
-<li>Free List中的每一个结点都是缓存页对应的描述信息。并且通过描述信息可以找到指定的缓存页，如果一个缓存页中没有存储任何数据，那么它对应的描述信息就会被维护进Free List中。</li>
-<li>当数据库刚启动时，LRU列表是空的，即没有任何的页。这时页都存放在Free列表中。</li>
-<li>当需要从缓冲池中分页时，首先从Free列表中查找是否有可用的空闲页，若有则将该页从Free列表中删除，放入到LRU列表中。否则，根据LRU算法，淘汰LRU列表末尾的页，将该内存空间分配给新的页。</li>
-<li>当页从LRU列表的old部分加入到new部分时，称此时发生的操作为page made young，而因为innodb_old_blocks_time的设置而导致页没有从old部分移动到new部分的操作称为page not made young。</li>
-</ul>
-<h2 id="Flush-List"><a href="#Flush-List" class="headerlink" title="Flush List"></a>Flush List</h2><ul>
-<li>在LRU列表中的页被修改后，称该页为脏页（dirty page），即缓冲池中的页和磁盘上的页的数据产生了不一致。</li>
-<li>这时数据库会通过CHECKPOINT机制将脏页刷新回磁盘，而Flush列表中的页即为脏页列表。需要注意的是，脏页既存在于LRU列表中，也存在于Flush列表中。</li>
-<li><mark>LRU列表用来管理缓冲池中页的可用性，Flush列表用来管理将页刷新回磁盘</mark>，二者互不影响。</li>
-</ul>
-<h2 id="Checkpoint技术（持久性）"><a href="#Checkpoint技术（持久性）" class="headerlink" title="Checkpoint技术（持久性）"></a>Checkpoint技术（持久性）</h2><p>为了避免发生数据丢失的问题， 当前事务数据库系统普遍都采用了WriteAhead Log策略， 即当事务提交时，先写重做日志，再修改页。当由于发生宕机而导致数据丢失时，通过重做日志来完成数据的恢复。这也是事务ACID中D (Durability持久性）的要求。<br>Checkpoint（检查点）技术的目的是解决以下几个问题：</p>
-<ul>
-<li>缩短数据库的恢复时间；</li>
-<li>缓冲池不够用时，将脏页刷新到磁盘；</li>
-<li>重做日志不可用时，刷新脏页。</li>
-</ul>
-<h3 id="重做日志缓冲"><a href="#重做日志缓冲" class="headerlink" title="重做日志缓冲"></a>重做日志缓冲</h3><p>InnoDB存储引擎首先将重做日志信息先放入到这个缓冲区，然后按一定频率将其刷新到重做日志文件。重做日志缓冲一般不需要设置得很大，因为一般情况下每一秒钟会将重做日志缓冲刷新到日志文件，因此用户只需要保证每秒产生的事务量在这个缓冲大小之内即可。<br>下列几种情况下会将重做日志缓冲中的内容刷新到外部磁盘的重做日志文件中：</p>
-<ol>
-<li>MasterThread每一秒将重做日志缓冲刷新到重做日志文件；</li>
-<li>每个事务提交时会将重做日志缓冲刷新到重做日志文件；</li>
-<li>当重做日志缓冲池剩余空间小于1 &#x2F;2时，重做日志缓冲刷新到重做日志文件。</li>
-</ol>
-<h2 id="undo-log-原子性"><a href="#undo-log-原子性" class="headerlink" title="undo log(原子性)"></a>undo log(原子性)</h2><p>undo log主要记录数据的逻辑变化，为了在发生错误时回滚之前的操作，需要将之前的操作都记录下来，然后在发生错误时才可以回滚。</p>
-<p>undo log的作用<br>undo是一种逻辑日志，有两个作用：</p>
-<p>事务回滚<br>MVCC<br>重点关注如何利用undo log进行事务回滚。</p>
-<p>undo日志，只将数据库逻辑地恢复到原来的样子，在回滚的时候，它实际上是做的相反的工作，比如一条INSERT ，对应一条 DELETE，对于每个UPDATE,对应一条相反的 UPDATE,将修改前的行放回去。通过undo log进行事务回滚操作可以保障事务的原子性。</p>
-<p>undo log的写入时机<br>DML操作修改聚簇索引前，记录undo log<br>二级索引记录的修改，不记录undo log<br>需要注意的是，undo log页面的修改，同样需要记录redo日志。</p>
-<p>undo log的存储位置<br>在InnoDB存储引擎中，undo log存储在回滚段(Rollback Segment)中,每个回滚段记录了1024个undo log segment，而在每个undo log segment段中进行undo 页的申请，在5.6以前，Rollback Segment是在共享表空间里的，5.6.3之后，可通过 innodb_undo_tablespace设置undo存储的位置。</p>
-<p>undo的类型<br>在InnoDB存储引擎中，undo log分为：</p>
-<p>insert undo log<br>update undo log<br>insert undo log是指在insert 操作中产生的undo log，因为insert操作的记录，只对事务本身可见，对其他事务不可见。故该undo log可以在事务提交后直接删除，不需要进行purge操作。</p>
-<p>而update undo log记录的是对delete 和update操作产生的undo log，该undo log可能需要提供MVCC机制，因此不能再事务提交时就进行删除。提交时放入undo log链表，等待purge线程进行最后的删除。</p>
-<p>补充：purge线程两个主要作用是：清理undo页和清除page里面带有Delete_Bit标识的数据行。在InnoDB中，事务中的Delete操作实际上并不是真正的删除掉数据行，而是一种Delete Mark操作，在记录上标识Delete_Bit，而不删除记录。是一种”假删除”,只是做了个标记，真正的删除工作需要后台purge线程去完成。</p>
-<p>undo log 是否是redo log的逆过程？<br>undo log 是否是redo log的逆过程？其实从前文就可以得出答案了，undo log是逻辑日志，对事务回滚时，只是将数据库逻辑地恢复到原来的样子，而redo log是物理日志，记录的是数据</p>
-<h1 id="InnoDB与MyISAM的区别"><a href="#InnoDB与MyISAM的区别" class="headerlink" title="InnoDB与MyISAM的区别"></a>InnoDB与MyISAM的区别</h1><p>InnoDB支持4个事务隔离级别，回滚，崩溃修复能力和多版本并发的事务安全，包括ACID。如果应用中需要执行大量的INSERT或UPDATE操作，则应该使用InnoDB，这样可以提高多用户并发操作的性能<br>MyISAM管理非事务表。它提供高速存储和检索，以及全文搜索能力。如果应用中需要执行大量的SELECT查询，那么MyISAM是更好的选择</p>
-<ol>
-<li><p><strong>InnoDB 支持事务，MyISAM 不支持事务。</strong><br>这是 MySQL 将默认存储引擎从 MyISAM 变成 InnoDB 的重要原因之一；</p>
-</li>
-<li><p><strong>InnoDB 支持外键，而 MyISAM 不支持。</strong><br>对一个包含外键的 InnoDB 表转为 MYISAM 会失败；  </p>
-</li>
-<li><p><strong>InnoDB 是聚集索引，MyISAM 是非聚集索引。</strong><br>InnoDB的B+树主键索引的叶子节点就是数据文件，辅助索引的叶子节点是主键的值；而MyISAM的B+树主键索引和辅助索引的叶子节点都是数据文件的地址指针。</p>
-</li>
-</ol>
-<p>![](vx_images&#x2F;4903259199102.png &#x3D;700x)</p>
-<p>![](vx_images&#x2F;4502782766625.png &#x3D;500x)</p>
-<ol start="4">
-<li><p><strong>InnoDB 不保存表的具体行数，执行 select count(*) from table 时需要全表扫描。而MyISAM 用一个变量保存了整个表的行数，执行上述语句时只需要读出该变量即可，速度很快。</strong></p>
-</li>
-<li><p><strong>InnoDB 最小的锁粒度是行锁，MyISAM 最小的锁粒度是表锁。一个更新语句会锁住整张表，导致其他查询和更新都会被阻塞，因此并发访问受限。这也是 MySQL 将默认存储引擎从 MyISAM 变成 InnoDB 的重要原因之一；</strong></p>
-</li>
-<li><p><strong>MyISAM支持全文类型索引，而InnoDB不支持全文索引</strong></p>
-</li>
-<li><p><strong>MyISAM相对简单，效率上要优于InnoDB，小型应用可以考虑使用MyISAM</strong></p>
-</li>
-</ol>
-<h1 id="一条SQL语句的执行流程"><a href="#一条SQL语句的执行流程" class="headerlink" title="一条SQL语句的执行流程"></a>一条SQL语句的执行流程</h1><p>![](vx_images&#x2F;5001518199187.png &#x3D;500x)</p>
-<p>MySQL 主要分为 Server 层和存储引擎层：</p>
-<ul>
-<li>Server 层：主要包括连接器、查询缓存、分析器、优化器、执行器等，所有跨存储引擎的功能都在这一层实现，比如存储过程、触发器、视图，函数等，还有一个通用的日志模块 binglog 日志模块。</li>
-<li>存储引擎： 主要负责数据的存储和读取，采用可以替换的插件式架构，支持 InnoDB、MyISAM、Memory 等多个存储引擎，其中 InnoDB 引擎有自有的日志模块 redolog 模块。现在最常用的存储引擎是 InnoDB，它从 MySQL 5.5.5 版本开始就被当做默认存储引擎了。</li>
-</ul>
-<h2 id="执行流程"><a href="#执行流程" class="headerlink" title="执行流程"></a>执行流程</h2><ol>
-<li><p>客户端向MySQL服务器发送一条查询请求</p>
-</li>
-<li><p>服务器首先先检查查询缓存，如果命中缓存，则立刻返回存储在缓存中的结果。否则进入下一阶段</p>
-</li>
-<li><p>服务器进行SQL解析、预处理、再由优化器生成对应的执行计划</p>
-</li>
-<li><p>MySQL根据执行计划，调用存储引擎的API来执行查询</p>
-</li>
-<li><p>将结果返回给客户端，同时缓存查询结果</p>
-</li>
-</ol>
-<h1 id="mysql分页查询"><a href="#mysql分页查询" class="headerlink" title="mysql分页查询"></a>mysql分页查询</h1><ul>
-<li><p>方式1：select * from table order by id limit m, n;<br>该语句的意思就是查询m+n条记录，去掉前m条，返回后n条。无疑该查询能够实现分页，但m越大，查询性能就越低，因为MySQL需要扫描全部m+n条记录。</p>
-</li>
-<li><p>方式2：select * from table where id &gt; #max_id# order by id limit n;<br>该查询同样会返回后n条记录，却无需像方式1扫描前m条记录，但必须在每次查询时拿到上一次查询（上一页）的最大id（或最小id）。该查询的问题也在于我们不一定能拿到这个id，比如当前在第3页，需要查询第5页的数据，就不行了。</p>
-</li>
-<li><p>方式3：<br>为了避免方式2不能实现的跨页查询，就需要结合方式1。<br>性能需要，m得尽量小，比如当前在第3页，需要查询第5页，每页10条数据，而当前第3页的最大id为#max_id#，则：<br>select * from table where id &gt; #max_id# order by id limit 10, 10;<br>该查询方式就部分解决了方式2的问题，但如果当前在第2页，要查第1000页，性能仍然较差。</p>
-</li>
-<li><p>方式4：select * from table as a inner join (select id from table order by id limit m, n) as b on a.id &#x3D; b.id order by a.id;<br>该查询同方式1一样，m的值可能很大，但由于内部的子查询只扫描了id字段，而非全表，所以性能要强于方式1，并且能够解决方式2和方式3不能解决的问题。</p>
-</li>
-<li><p>方式5：select * from table where id &gt; (select id from table order by id limit m, 1) limit n;<br>该查询同样是通过子查询扫描字段id，效果同方式4。但方式5的性能会略好于方式4，因为方式5不需要进行表的关联，而是一个简单的比较，在不知道上一页最大id的情况下，是比较推荐的用法。</p>
-</li>
-</ul>
-<center><font size="32">------赞助耶耶，加快更新！------</font></center>
-
-<p><img data-src="/mybook.github.io/images/donate_jpg.jpg"></p>
-<link rel="stylesheet" href="/mybook.github.io/css/spoiler.css" type="text/css"><script src="/mybook.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>三件套</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>系统监控-Prometheus&quot;好像&quot;不准确啊</title>
-    <url>/mybook.github.io/2024/05/24/Prometheus%E4%B8%8EGrafana/</url>
-    <content><![CDATA[<h1 id="Grafana"><a href="#Grafana" class="headerlink" title="Grafana"></a>Grafana</h1><h2 id="什么是Grafana？"><a href="#什么是Grafana？" class="headerlink" title="什么是Grafana？"></a>什么是Grafana？</h2><p>Grafana是一款功能强大的开源监控数据分析和可视化套件。它最初主要用于显示和监控Graphite指标数据，但随着时间的推移，其功能和应用范围得到了极大的扩展。Grafana的核心功能在于对基础设施和应用数据分析的时间序列数据进行可视化分析，使用户能够更直观地理解和分析数据。<strong>可以理解为一种前端展示</strong></p>
-<p><img data-src="/mybook.github.io/images/238945509252002.png"></p>
-<p>特点：</p>
-<ol>
-<li>展示方式：快速灵活的客户端图表，面板插件有许多不同方式的可视化指标和日志，官方库中具有丰富的仪表盘插件，比如热图、折线图、图表等多种展示方式；</li>
-<li>数据源：Graphite，InfluxDB，OpenTSDB，Prometheus，Elasticsearch，CloudWatch和KairosDB等；</li>
-<li>通知提醒：以可视方式定义最重要指标的警报规则，Grafana将不断计算并发送通知，在数据达到阈值时通过Slack、PagerDuty等获得通知；</li>
-<li>混合展示：在同一图表中混合使用不同的数据源，可以基于每个查询指定数据源，甚至自定义数据源；</li>
-<li>注释：使用来自不同数据源的丰富事件注释图表，将鼠标悬停在事件上会显示完整的事件元数据和标记；</li>
-<li>过滤器：Ad-hoc过滤器允许动态创建新的键&#x2F;值过滤器，这些过滤器会自动应用于使用该数据源的所有查询。</li>
-</ol>
-<p><a href="https://grafana.com/docs/grafana/latest/datasources/prometheus/">Grafana使用Prometheus数据源官方文档</a></p>
-<h1 id="Prometheus"><a href="#Prometheus" class="headerlink" title="Prometheus"></a>Prometheus</h1><p><a href="https://prometheus.wang/">Prometheus学习与实战</a></p>
-<p><strong>！！！Prometheus 的指标值，并非 100% 准确！！！</strong></p>
-<h2 id="可观测三角"><a href="#可观测三角" class="headerlink" title="可观测三角"></a>可观测三角</h2><p>在可观测的世界里，metrics（指标）、log（日志）、trace（调用链） 三足鼎立。有点<strong>类似分布式系统的CAP理论</strong></p>
-<p><img data-src="/mybook.github.io/images/375883109258991.png"></p>
-<ul>
-<li>metrics（指标）好似运动手表：24小时采样心率，并在心率超限时告警；</li>
-<li>log（日志）好似详细体检：输出厚厚一沓严密、精确的权威报告；</li>
-<li>trace（调用链）好似血管灌注：哪段血管堵了，只需看灌注造影，一目了然。</li>
-</ul>
-<p>Prometheus 所在的 metrics（指标） 领域，其目标是诊断整体健康状况，其手段通常是对原始数据先采样、再聚合，利用有限的信息，分析变化趋势；而并非像 log（日志）那样，翔实精确、事无巨细地，记录每一桩事件、每一条原始数据。</p>
-<h2 id="Prometheus做出的妥协"><a href="#Prometheus做出的妥协" class="headerlink" title="Prometheus做出的妥协"></a>Prometheus做出的妥协</h2><p>除了 metrics 领域自身的特性，Prometheus 毕竟处在一个条件有限的真实世界，它还要随时面临以下困难：</p>
-<ul>
-<li>自身硬件有限：不敢拼命计算，不敢无限存储；</li>
-<li>采样统计的局限性：稀稀拉拉、分布未知的样本；</li>
-<li>分布式的局限性：丢数据的网络、不靠谱的对端；<br>……</li>
-</ul>
-<p>Prometheus 需要在上述限制下，交出 not perfect、但是 good enough 的指标。于是就有了下述设计：</p>
-<ul>
-<li><strong>单次采样不重要，多次采样组成的时间序列才重要。所以，单次采样受阻，是可以无需重试、直接丢弃的。</strong></li>
-<li><strong>单点数值不重要，多点数值汇聚的变化趋势才重要。所以，单点数值是可以“无中生有”、”脑补”估算的。</strong></li>
-</ul>
-<h2 id="案例分解"><a href="#案例分解" class="headerlink" title="案例分解"></a>案例分解</h2><h3 id="rate-increase"><a href="#rate-increase" class="headerlink" title="rate&#x2F;increase"></a>rate&#x2F;increase</h3><p>在使用 rate 或者 increase 观测 counter 类型的指标增量时，经常碰到以下问题：</p>
-<ul>
-<li>每分钟新增的请求数，竟然是个小数？</li>
-<li>不仅是个小数，还比真实增量更大？</li>
-</ul>
-<p>Prometheus在没有踩中样本值做法是：naive 地假设所有样本点在该时间范围内是均匀分布的，然后按照这个均匀分布的线性规律，**”脑补”估算出边界上的采样点**。那么，补出来一些不准确的值，也就不足为奇了。</p>
-<p>其中脑补这一操作，使用的就是<strong>线性外推算法</strong>：rate&#x2F;increase[时间范围] 在计算该时间范围内的增量时，第一步要拿到该时间范围边界上（开始时刻和结束时刻）的样本点，相减得到差值。<strong>但是：在当前时间范围的边界，并不一定那么凑巧地有样本点存在。</strong></p>
-<p><strong>分析：</strong><br>计算一分钟之内，errors_total 值的增量，也即 increase(errors_total[1m])。要计算 [1m] 的时间范围&#x2F;取样窗口内的 increase，在最理想的情况下，Prometheus 根本不想关心这个窗口内的其他数据，而只需从窗口左边界取第一个点，右边界取最后一个点，相减即可：</p>
-<p><img data-src="/mybook.github.io/images/440064009267024.png"></p>
-<p><strong>但是，能保证每次都能踩中自己上报的值吗？答案很显然不能</strong></p>
-<p><img data-src="/mybook.github.io/images/222244109259693.png"></p>
-<p>取窗口覆盖范围内的第一个点和最后一个点，计算斜率，并按照该斜率将直线延伸至窗口边界，无中生有地“脑补”出虚拟的两个“样本点”，即可相减计算 increase 了：</p>
-<p><img data-src="/mybook.github.io/images/249594409256248.png"></p>
-<p>如上图：用绿圈圈所代表的“虚拟样本”相减，得到的 increase 1.3 不仅是个小数，还比实际值偏大，也就不足为奇了。</p>
-<h3 id="histogram"><a href="#histogram" class="headerlink" title="histogram"></a>histogram</h3><h3 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h3><h2 id="PromQL"><a href="#PromQL" class="headerlink" title="PromQL"></a>PromQL</h2><center><font size="32">------赞助耶耶，加快更新！------</font></center>
-
-<p> <img data-src="/mybook.github.io/images/donate_jpg.jpg"></p>
-<link rel="stylesheet" href="/mybook.github.io/css/spoiler.css" type="text/css"><script src="/mybook.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>奇闻轶事</category>
-      </categories>
-  </entry>
-  <entry>
     <title>C++</title>
     <url>/mybook.github.io/2024/05/20/C++/</url>
     <content><![CDATA[<h1 id="面向对象特性"><a href="#面向对象特性" class="headerlink" title="面向对象特性"></a>面向对象特性</h1><h2 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h2><p>把客观事物封装成抽象的类，类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。</p>
@@ -926,6 +643,289 @@ new对数组的支持体现在它会分别调用构造函数函数初始化每�
       </categories>
   </entry>
   <entry>
+    <title>Golang</title>
+    <url>/mybook.github.io/2024/05/20/Go/</url>
+    <content><![CDATA[<h1 id="Golang"><a href="#Golang" class="headerlink" title="Golang"></a>Golang</h1><h2 id="数值（-16-个）"><a href="#数值（-16-个）" class="headerlink" title="数值（ 16 个）"></a>数值（ 16 个）</h2><h3 id="整型（-12-个）"><a href="#整型（-12-个）" class="headerlink" title="整型（ 12 个）"></a>整型（ 12 个）</h3><p>byte int int8 int16 int32 int64 </p>
+<p>uint unint8 uint16 uint32 uint64 uintprt </p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">uint8</td>
+<td align="center">0 到 255</td>
+</tr>
+<tr>
+<td align="center">uint16</td>
+<td align="center">0 到 65535</td>
+</tr>
+<tr>
+<td align="center">uint32</td>
+<td align="center">0 到 4294967295</td>
+</tr>
+<tr>
+<td align="center">unit64</td>
+<td align="center">(0 到 18446744073709551615)</td>
+</tr>
+<tr>
+<td align="center">int8</td>
+<td align="center">-128 到 127</td>
+</tr>
+<tr>
+<td align="center">int16</td>
+<td align="center">-32768 到 32767</td>
+</tr>
+<tr>
+<td align="center">int32</td>
+<td align="center">-2147483648 到 2147483647</td>
+</tr>
+<tr>
+<td align="center">int64</td>
+<td align="center">(-9223372036854775808 到 9223372036854775807)</td>
+</tr>
+</tbody></table>
+<h3 id="浮点型（-2个）"><a href="#浮点型（-2个）" class="headerlink" title="浮点型（ 2个）"></a>浮点型（ 2个）</h3><p>float32 float64 </p>
+<h3 id="复数型（-2个）"><a href="#复数型（-2个）" class="headerlink" title="复数型（ 2个）"></a>复数型（ 2个）</h3><p>complex64    complex128 </p>
+<h3 id="字符和字符串型（-2个）"><a href="#字符和字符串型（-2个）" class="headerlink" title="字符和字符串型（ 2个）"></a>字符和字符串型（ 2个）</h3><p>string   rune </p>
+<h3 id="接口型（-1个）"><a href="#接口型（-1个）" class="headerlink" title="接口型（ 1个）"></a>接口型（ 1个）</h3><p>error </p>
+<h3 id="布尔型（1个）"><a href="#布尔型（1个）" class="headerlink" title="布尔型（1个）"></a>布尔型（1个）</h3><p>bool </p>
+<p>token 是构成源程序的基本不可再分割的单元。</p>
+<p>变量表示指向的内存可以被修改，常量表示指向的内存不能被修改。</p>
+<p>需要注意的是 { 不能单独放在一行，在运行时会产生错误</p>
+<p>字符串是常量，可以通过类 数组 索引访问其字节单元，但是不能修改某个字节的值。</p>
+<p>Go语言基本的复合数据类型有指针、数组、切片、字典（ map ）、通道、结构和接口，它们的字面量格式如下&#96;</p>
+<p> :&#x3D; 是一个声明语句。intVal :&#x3D; 1 相等于：</p>
+<p>Go 函数可以返回多个值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var intVal int </span><br><span class="line">intVal =1 </span><br></pre></td></tr></table></figure>
+
+<p>可以将 var f string &#x3D; “Runoob” 简写为 f :&#x3D; “Runoob”：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pointerType  	／／指针类型使用＊后面跟其指向的类型名</span><br><span class="line">[n] elementType 	／／数纽类型使用［ ）后面跟数纽元素类型来表示， 表示该数组的长度</span><br><span class="line">[] elementType 		／／ 切片类型使用［］后面跟切片元素类型来表示</span><br><span class="line">map [keyType)valueType 	//map 类型使用 map ［键类型］值类型来表</span><br><span class="line">chan valueType 	／／通道使 ch an 后面跟远远元素类型来表示</span><br><span class="line">struct &#123; 	／／结构类型使 str uct ｛｝将各个结构字段扩起来表示</span><br><span class="line">    feildType feildType</span><br><span class="line">    feildType feildType </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">interface ｛／／接 口类型使用 interface ｛｝将各个方法括起来表示</span><br><span class="line">methodl ( inputParams) ( returnParams)</span><br><span class="line">method2 (inputParams) (returnParams)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<center><font size="32">------赞助耶耶，加快更新！------</font></center>
+
+<p> <img data-src="/mybook.github.io/images/donate_jpg.jpg"></p>
+<link rel="stylesheet" href="/mybook.github.io/css/spoiler.css" type="text/css"><script src="/mybook.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>语言</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Mysql</title>
+    <url>/mybook.github.io/2024/05/22/Mysql/</url>
+    <content><![CDATA[<h1 id="sql分类"><a href="#sql分类" class="headerlink" title="sql分类"></a>sql分类</h1><p>DDL中常用的命令有：create，drop，alter，truncate、rename<br>DML中常用的命令有：insert，update，delete、select</p>
+<h1 id="数据库三大范式"><a href="#数据库三大范式" class="headerlink" title="数据库三大范式"></a>数据库三大范式</h1><h2 id="第一范式（1NF）"><a href="#第一范式（1NF）" class="headerlink" title="第一范式（1NF）"></a>第一范式（1NF）</h2><p><mark>列不可再分</mark><br>每一列属性都是不可再分的属性值，确保每一列的原子性</p>
+<h2 id="第二范式（2NF）"><a href="#第二范式（2NF）" class="headerlink" title="第二范式（2NF）"></a>第二范式（2NF）</h2><p><mark>属性完全依赖于主键</mark><br>第二范式需要确保数据库表中的每一列都和主键相关，而不能只与主键的某一部分相关（主要针对联合主键而言）。也就是说在一个数据库表中，一个表中只能保存一种数据，不可以把多种数据保存在同一张数据库表中。</p>
+<h2 id="第三范式（3NF）"><a href="#第三范式（3NF）" class="headerlink" title="第三范式（3NF）"></a>第三范式（3NF）</h2><p><mark>属性不依赖于其它非主属性    属性直接依赖于主键</mark><br>数据不能存在传递关系，需要确保数据表中的每一列数据都和主键直接相关，而不能间接相关。像：a–&gt;b–&gt;c  属性之间含有这样的关系，是不符合第三范式的。</p>
+<h1 id="四种特性"><a href="#四种特性" class="headerlink" title="四种特性"></a>四种特性</h1><ol>
+<li>原子性（Atomicity）<br>原子性是指事务包含的所有操作要么全部成功，要么全部失败回滚，因此事务的操作如果成功就必须要完全应用到数据库，如果操作失败则不能对数据库有任何影响。</li>
+<li>一致性（Consistency）<br>一致性是指事务必须使数据库从一个一致性状态变换到另一个一致性状态，也就是说一个事务执行之前和执行之后都必须处于一致性状态。<br>拿转账来说，假设用户A和用户B两者的钱加起来一共是5000，那么不管A和B之间如何转账，转几次账，事务结束后两个用户的钱相加起来应该还得是5000，这就是事务的一致性。</li>
+<li>隔离性（Isolation）<br>隔离性是当多个用户并发访问数据库时，比如操作同一张表时，数据库为每一个用户开启的事务，不能被其他事务的操作所干扰，多个并发事务之间要相互隔离。</li>
+<li>持久性（Durability）<br>持久性是指一个事务一旦被提交了，那么对数据库中的数据的改变就是永久性的，即便是在数据库系统遇到故障的情况下也不会丢失提交事务的操作。</li>
+</ol>
+<h1 id="聚集索引和非聚集索引"><a href="#聚集索引和非聚集索引" class="headerlink" title="聚集索引和非聚集索引"></a>聚集索引和非聚集索引</h1><ul>
+<li>聚集索引一个表只能有一个，而非聚集索引一个表可以存在多个</li>
+<li>聚集索引存储记录是物理上连续存在，而非聚集索引是逻辑上的连续，物理存储并不连续</li>
+<li>聚集索引:物理存储按照索引排序；聚集索引是一种索引组织形式，索引的键值逻辑顺序决定了表数据行的物理存储顺序。<br>非聚集索引:物理存储不按照索引排序；非聚集索引则就是普通索引了，仅仅只是对数据列创建相应的索引，不影响整个表的物理存储顺序。</li>
+<li>聚集索引的叶节点就是数据节点。而非聚簇索引的叶节点仍然是索引节点，只不过有一个指针指向对应的数据块。</li>
+</ul>
+<h2 id="主键索引与聚集索引的区别"><a href="#主键索引与聚集索引的区别" class="headerlink" title="主键索引与聚集索引的区别"></a>主键索引与聚集索引的区别</h2><p>innodb引擎里面，主键的确就是聚集索引，但是myisam引擎里面主键也不是聚集索引。<br><mark>聚集索引决定了数据库的物理存储结构，而主键只是确定表格逻辑组织方式。这两者不可混淆</mark><br>对于Innodb：</p>
+<ol>
+<li>如果一个主键被定义了，那么这个主键就是作为聚集索引</li>
+<li>如果没有主键被定义，那么该表的第一个唯一非空索引被作为聚集索引</li>
+<li>如果没有主键也没有合适的唯一索引，那么innodb内部会生成一个隐藏的主键作为聚集索引，这个隐藏的主键是每行数据内置的6字节ROWID，该列的值会随着数据的插入自增。</li>
+</ol>
+<h1 id="事务隔离级别"><a href="#事务隔离级别" class="headerlink" title="事务隔离级别"></a>事务隔离级别</h1><ol>
+<li>脏读<br>脏读是指在一个事务处理过程里读取了另一个未提交的事务中的数据。因为另外一个事务还没提交，所以它随时可能会回滚，那么必然导致你更新的数据就没了。<br>当一个事务正在多次修改某个数据，而在这个事务中这多次的修改都还未提交，这时一个并发的事务来访问该数据，就会造成两个事务得到的数据不一致</li>
+<li>不可重复读<br>不可重复读是指在对于数据库中的某个数据，一个事务范围内多次查询却返回了不同的数据值，这是由于在查询间隔，被另一个事务修改并提交了。<br>例如事务T1在读取某一数据，而事务T2立马修改了这个数据并且提交事务给数据库，事务T1再次读取该数据就得到了不同的结果，发送了不可重复读。<br><mark>不可重复读和脏读的区别是，脏读是某一事务读取了另一个事务未提交的脏数据，而不可重复读则是读取了前一事务提交的数据。</mark></li>
+<li>虚读(幻读)<br>幻读是事务非独立执行时发生的一种现象。例如事务T1对一个表中所有的行的某个数据项做了从“1”修改为“2”的操作，这时事务T2又对这个表中插入了一行数据项，而这个数据项的数值还是为“1”并且提交给数据库。而操作事务T1的用户如果再查看刚刚修改的数据，会发现还有一行没有修改，其实这行是从事务T2中添加的，就好像产生幻觉一样，这就是发生了幻读。<br><mark>幻读和不可重复读都是读取了另一条已经提交的事务（这点就脏读不同），所不同的是不可重复读查询的都是同一个数据项，而幻读针对的是一批数据整体（比如数据的个数）。</mark></li>
+</ol>
+<p>现在来看看MySQL数据库为我们提供的四种隔离级别：<br>① Serializable (串行化)：可避免脏读、不可重复读、幻读的发生。<br>② Repeatable read (可重复读)：可避免脏读、不可重复读的发生。<br>③ Read committed (读已提交)：可避免脏读的发生。<br>④ Read uncommitted (读未提交)：最低级别，任何情况都无法保证。<br>设置数据库的隔离级别一定要是在开启事务之前！<br>Mysql 默认采用的②Repeatable read隔离级别 </p>
+<h1 id="索引与B-树"><a href="#索引与B-树" class="headerlink" title="索引与B+树"></a>索引与B+树</h1><h2 id="为什么数据库索引使用B-树"><a href="#为什么数据库索引使用B-树" class="headerlink" title="为什么数据库索引使用B+树"></a>为什么数据库索引使用B+树</h2><ul>
+<li><p>MySQL中的数据一般是放在磁盘中的，读取数据的时候肯定会有访问磁盘的操作，磁盘中有两个机械运动的部分，分别是盘片旋转和磁臂移动。盘片旋转就是我们市面上所提到的多少转每分钟，而磁盘移动则是在盘片旋转到指定位置以后，移动磁臂后开始进行数据的读写。</p>
+</li>
+<li><p>那么这就存在一个定位到磁盘中的块的过程，而定位是磁盘的存取中花费时间比较大的一块，毕竟机械运动花费的时候要远远大于电子运动的时间。当大规模数据存储到磁盘中的时候，显然定位是一个非常花费时间的过程，但是我们可以通过B树进行优化，提高磁盘读取时定位的效率。</p>
+</li>
+<li><p>尽量多的在结点上存储相关的信息，保证层数尽量的少，以便后面我们可以更快的找到信息，磁盘的I&#x2F;O操作也少一些，而且B+树是平衡树，每个结点到叶子结点的高度都是相同，这也保证了每个查询是稳定的。一颗B&#x2F;B+树的高度远远小于红黑树的高度。B+树上操作的时间通常由存取磁盘的时间和CPU计算时间这两部分构成，而CPU的速度非常快，所以<mark>B树的操作效率取决于访问磁盘的次数</mark>，B树的高度越小，磁盘I&#x2F;O所花的时间越少。</p>
+</li>
+</ul>
+<h2 id="为什么说B-树比B树更适合数据库索引"><a href="#为什么说B-树比B树更适合数据库索引" class="headerlink" title="为什么说B+树比B树更适合数据库索引"></a>为什么说B+树比B树更适合数据库索引</h2><ol>
+<li><p>B+树的查询效率更加稳定：由于非终结点并不是最终指向文件内容的结点，而只是叶子结点中关键字的索引。所以任何关键字的查找必须走一条从根结点到叶子结点的路。所有关键字查询的路径长度相同，导致每一个数据的查询效率相当。</p>
+</li>
+<li><p>由于B+树的数据都存储在叶子结点中，分支结点均为索引，方便扫库，只需要扫一遍叶子结点即可，但是B树因为其分支结点同样存储着数据，我们要找到具体的数据，需要进行一次中序遍历按序来扫，例如数据库中select数据，很多时候会选多条，比如按照id排序后选10条。B树需要做局部的中序遍历，可能要跨层访问。而B+树由于所有数据都在叶子结点，不用跨层，同时由于有链表结构，只需要找到首尾，通过链表就能把所有数据取出来了。所以B+树更加适合在区间查询的情况，所以通常B+树用于数据库索引。</p>
+</li>
+</ol>
+<h2 id="为什么数据库索引不采用hash"><a href="#为什么数据库索引不采用hash" class="headerlink" title="为什么数据库索引不采用hash"></a>为什么数据库索引不采用hash</h2><ol>
+<li>hash不能进行范围查找 如果只选一个数据，那确实是hash更快。但是数据库中经常会选择多条，这时候由于B+树索引有序，并且又有链表相连，它的查询效率比hash就快很多了。</li>
+<li>数据库中的索引一般是在磁盘上，使用hash时，数据量大的情况可能无法一次装入内存，B+树的设计可以允许数据分批加载，同时树的高度较低，提高查找效率。</li>
+<li>当数据量很大时，hash冲突的概率也会非常大</li>
+</ol>
+<h1 id="数据库内存技术"><a href="#数据库内存技术" class="headerlink" title="数据库内存技术"></a>数据库内存技术</h1><h2 id="缓冲池"><a href="#缓冲池" class="headerlink" title="缓冲池"></a>缓冲池</h2><p><img data-src="/mybook.github.io/vx_images/173992495713.png"></p>
+<ul>
+<li>由于CPU速度和磁盘速度的鸿沟，使用缓冲池提高数据库性能，</li>
+<li>在数据库中进行读取页的操作，首先将从磁盘读到的页存放在缓冲池中，下一次再读相同的页时，首先判断该页是否在缓冲池中。若在缓冲池中，称该页在缓冲池中被命中，直接读取该页。否则，读取磁盘上的页。</li>
+<li>页从缓冲池刷新回磁盘的操作并不是在每次页发生更新时触发，而是通过Checkpoint的机制刷新回磁盘</li>
+</ul>
+<h2 id="LRU-list"><a href="#LRU-list" class="headerlink" title="LRU list"></a>LRU list</h2><p>最近最少使用算法</p>
+<ul>
+<li>最频繁使用的页在LRU列表的前端，最少使用的在LRU列表的尾端，首先释放LRU尾端的页</li>
+<li>在 InnoDB的存储引擎中，LRU列表中还加入了midpoint位置。新读取到的页，虽然是最新访问的页，但并不是直接放入到LRU列表的首部，而是放入到LRU列表的midpoint 位置。在默认配置下，该位置在LRU列表长度的5／8处。</li>
+<li><mark>为什么不采用朴素的LRU算法，直接将读取的页放人到LRU列表的首部呢？</mark><br>常见的这类操作为索引或数据的扫描操作。这类操作需要访问表中的许多页，甚至是全部的页，而这些页通常来说又仅在这次查询操作中需要，并不是活跃的热点数据。如果页被放入LRU列表的首部，那么非常可能将所需要的热点数据页从LRU列表中移除，而在下一次需要读取该页时，InnoDB存储引擎需要再次访问磁盘，从而影响缓冲池的效率。</li>
+</ul>
+<h2 id="Free-list"><a href="#Free-list" class="headerlink" title="Free list"></a>Free list</h2><ul>
+<li>Free List中的每一个结点都是缓存页对应的描述信息。并且通过描述信息可以找到指定的缓存页，如果一个缓存页中没有存储任何数据，那么它对应的描述信息就会被维护进Free List中。</li>
+<li>当数据库刚启动时，LRU列表是空的，即没有任何的页。这时页都存放在Free列表中。</li>
+<li>当需要从缓冲池中分页时，首先从Free列表中查找是否有可用的空闲页，若有则将该页从Free列表中删除，放入到LRU列表中。否则，根据LRU算法，淘汰LRU列表末尾的页，将该内存空间分配给新的页。</li>
+<li>当页从LRU列表的old部分加入到new部分时，称此时发生的操作为page made young，而因为innodb_old_blocks_time的设置而导致页没有从old部分移动到new部分的操作称为page not made young。</li>
+</ul>
+<h2 id="Flush-List"><a href="#Flush-List" class="headerlink" title="Flush List"></a>Flush List</h2><ul>
+<li>在LRU列表中的页被修改后，称该页为脏页（dirty page），即缓冲池中的页和磁盘上的页的数据产生了不一致。</li>
+<li>这时数据库会通过CHECKPOINT机制将脏页刷新回磁盘，而Flush列表中的页即为脏页列表。需要注意的是，脏页既存在于LRU列表中，也存在于Flush列表中。</li>
+<li><mark>LRU列表用来管理缓冲池中页的可用性，Flush列表用来管理将页刷新回磁盘</mark>，二者互不影响。</li>
+</ul>
+<h2 id="Checkpoint技术（持久性）"><a href="#Checkpoint技术（持久性）" class="headerlink" title="Checkpoint技术（持久性）"></a>Checkpoint技术（持久性）</h2><p>为了避免发生数据丢失的问题， 当前事务数据库系统普遍都采用了WriteAhead Log策略， 即当事务提交时，先写重做日志，再修改页。当由于发生宕机而导致数据丢失时，通过重做日志来完成数据的恢复。这也是事务ACID中D (Durability持久性）的要求。<br>Checkpoint（检查点）技术的目的是解决以下几个问题：</p>
+<ul>
+<li>缩短数据库的恢复时间；</li>
+<li>缓冲池不够用时，将脏页刷新到磁盘；</li>
+<li>重做日志不可用时，刷新脏页。</li>
+</ul>
+<h3 id="重做日志缓冲"><a href="#重做日志缓冲" class="headerlink" title="重做日志缓冲"></a>重做日志缓冲</h3><p>InnoDB存储引擎首先将重做日志信息先放入到这个缓冲区，然后按一定频率将其刷新到重做日志文件。重做日志缓冲一般不需要设置得很大，因为一般情况下每一秒钟会将重做日志缓冲刷新到日志文件，因此用户只需要保证每秒产生的事务量在这个缓冲大小之内即可。<br>下列几种情况下会将重做日志缓冲中的内容刷新到外部磁盘的重做日志文件中：</p>
+<ol>
+<li>MasterThread每一秒将重做日志缓冲刷新到重做日志文件；</li>
+<li>每个事务提交时会将重做日志缓冲刷新到重做日志文件；</li>
+<li>当重做日志缓冲池剩余空间小于1 &#x2F;2时，重做日志缓冲刷新到重做日志文件。</li>
+</ol>
+<h2 id="undo-log-原子性"><a href="#undo-log-原子性" class="headerlink" title="undo log(原子性)"></a>undo log(原子性)</h2><p>undo log主要记录数据的逻辑变化，为了在发生错误时回滚之前的操作，需要将之前的操作都记录下来，然后在发生错误时才可以回滚。</p>
+<p>undo log的作用<br>undo是一种逻辑日志，有两个作用：</p>
+<p>事务回滚<br>MVCC<br>重点关注如何利用undo log进行事务回滚。</p>
+<p>undo日志，只将数据库逻辑地恢复到原来的样子，在回滚的时候，它实际上是做的相反的工作，比如一条INSERT ，对应一条 DELETE，对于每个UPDATE,对应一条相反的 UPDATE,将修改前的行放回去。通过undo log进行事务回滚操作可以保障事务的原子性。</p>
+<p>undo log的写入时机<br>DML操作修改聚簇索引前，记录undo log<br>二级索引记录的修改，不记录undo log<br>需要注意的是，undo log页面的修改，同样需要记录redo日志。</p>
+<p>undo log的存储位置<br>在InnoDB存储引擎中，undo log存储在回滚段(Rollback Segment)中,每个回滚段记录了1024个undo log segment，而在每个undo log segment段中进行undo 页的申请，在5.6以前，Rollback Segment是在共享表空间里的，5.6.3之后，可通过 innodb_undo_tablespace设置undo存储的位置。</p>
+<p>undo的类型<br>在InnoDB存储引擎中，undo log分为：</p>
+<p>insert undo log<br>update undo log<br>insert undo log是指在insert 操作中产生的undo log，因为insert操作的记录，只对事务本身可见，对其他事务不可见。故该undo log可以在事务提交后直接删除，不需要进行purge操作。</p>
+<p>而update undo log记录的是对delete 和update操作产生的undo log，该undo log可能需要提供MVCC机制，因此不能再事务提交时就进行删除。提交时放入undo log链表，等待purge线程进行最后的删除。</p>
+<p>补充：purge线程两个主要作用是：清理undo页和清除page里面带有Delete_Bit标识的数据行。在InnoDB中，事务中的Delete操作实际上并不是真正的删除掉数据行，而是一种Delete Mark操作，在记录上标识Delete_Bit，而不删除记录。是一种”假删除”,只是做了个标记，真正的删除工作需要后台purge线程去完成。</p>
+<p>undo log 是否是redo log的逆过程？<br>undo log 是否是redo log的逆过程？其实从前文就可以得出答案了，undo log是逻辑日志，对事务回滚时，只是将数据库逻辑地恢复到原来的样子，而redo log是物理日志，记录的是数据</p>
+<h1 id="InnoDB与MyISAM的区别"><a href="#InnoDB与MyISAM的区别" class="headerlink" title="InnoDB与MyISAM的区别"></a>InnoDB与MyISAM的区别</h1><p>InnoDB支持4个事务隔离级别，回滚，崩溃修复能力和多版本并发的事务安全，包括ACID。如果应用中需要执行大量的INSERT或UPDATE操作，则应该使用InnoDB，这样可以提高多用户并发操作的性能<br>MyISAM管理非事务表。它提供高速存储和检索，以及全文搜索能力。如果应用中需要执行大量的SELECT查询，那么MyISAM是更好的选择</p>
+<ol>
+<li><p><strong>InnoDB 支持事务，MyISAM 不支持事务。</strong><br>这是 MySQL 将默认存储引擎从 MyISAM 变成 InnoDB 的重要原因之一；</p>
+</li>
+<li><p><strong>InnoDB 支持外键，而 MyISAM 不支持。</strong><br>对一个包含外键的 InnoDB 表转为 MYISAM 会失败；  </p>
+</li>
+<li><p><strong>InnoDB 是聚集索引，MyISAM 是非聚集索引。</strong><br>InnoDB的B+树主键索引的叶子节点就是数据文件，辅助索引的叶子节点是主键的值；而MyISAM的B+树主键索引和辅助索引的叶子节点都是数据文件的地址指针。</p>
+</li>
+</ol>
+<p>![](vx_images&#x2F;4903259199102.png &#x3D;700x)</p>
+<p>![](vx_images&#x2F;4502782766625.png &#x3D;500x)</p>
+<ol start="4">
+<li><p><strong>InnoDB 不保存表的具体行数，执行 select count(*) from table 时需要全表扫描。而MyISAM 用一个变量保存了整个表的行数，执行上述语句时只需要读出该变量即可，速度很快。</strong></p>
+</li>
+<li><p><strong>InnoDB 最小的锁粒度是行锁，MyISAM 最小的锁粒度是表锁。一个更新语句会锁住整张表，导致其他查询和更新都会被阻塞，因此并发访问受限。这也是 MySQL 将默认存储引擎从 MyISAM 变成 InnoDB 的重要原因之一；</strong></p>
+</li>
+<li><p><strong>MyISAM支持全文类型索引，而InnoDB不支持全文索引</strong></p>
+</li>
+<li><p><strong>MyISAM相对简单，效率上要优于InnoDB，小型应用可以考虑使用MyISAM</strong></p>
+</li>
+</ol>
+<h1 id="一条SQL语句的执行流程"><a href="#一条SQL语句的执行流程" class="headerlink" title="一条SQL语句的执行流程"></a>一条SQL语句的执行流程</h1><p>![](vx_images&#x2F;5001518199187.png &#x3D;500x)</p>
+<p>MySQL 主要分为 Server 层和存储引擎层：</p>
+<ul>
+<li>Server 层：主要包括连接器、查询缓存、分析器、优化器、执行器等，所有跨存储引擎的功能都在这一层实现，比如存储过程、触发器、视图，函数等，还有一个通用的日志模块 binglog 日志模块。</li>
+<li>存储引擎： 主要负责数据的存储和读取，采用可以替换的插件式架构，支持 InnoDB、MyISAM、Memory 等多个存储引擎，其中 InnoDB 引擎有自有的日志模块 redolog 模块。现在最常用的存储引擎是 InnoDB，它从 MySQL 5.5.5 版本开始就被当做默认存储引擎了。</li>
+</ul>
+<h2 id="执行流程"><a href="#执行流程" class="headerlink" title="执行流程"></a>执行流程</h2><ol>
+<li><p>客户端向MySQL服务器发送一条查询请求</p>
+</li>
+<li><p>服务器首先先检查查询缓存，如果命中缓存，则立刻返回存储在缓存中的结果。否则进入下一阶段</p>
+</li>
+<li><p>服务器进行SQL解析、预处理、再由优化器生成对应的执行计划</p>
+</li>
+<li><p>MySQL根据执行计划，调用存储引擎的API来执行查询</p>
+</li>
+<li><p>将结果返回给客户端，同时缓存查询结果</p>
+</li>
+</ol>
+<h1 id="mysql分页查询"><a href="#mysql分页查询" class="headerlink" title="mysql分页查询"></a>mysql分页查询</h1><ul>
+<li><p>方式1：select * from table order by id limit m, n;<br>该语句的意思就是查询m+n条记录，去掉前m条，返回后n条。无疑该查询能够实现分页，但m越大，查询性能就越低，因为MySQL需要扫描全部m+n条记录。</p>
+</li>
+<li><p>方式2：select * from table where id &gt; #max_id# order by id limit n;<br>该查询同样会返回后n条记录，却无需像方式1扫描前m条记录，但必须在每次查询时拿到上一次查询（上一页）的最大id（或最小id）。该查询的问题也在于我们不一定能拿到这个id，比如当前在第3页，需要查询第5页的数据，就不行了。</p>
+</li>
+<li><p>方式3：<br>为了避免方式2不能实现的跨页查询，就需要结合方式1。<br>性能需要，m得尽量小，比如当前在第3页，需要查询第5页，每页10条数据，而当前第3页的最大id为#max_id#，则：<br>select * from table where id &gt; #max_id# order by id limit 10, 10;<br>该查询方式就部分解决了方式2的问题，但如果当前在第2页，要查第1000页，性能仍然较差。</p>
+</li>
+<li><p>方式4：select * from table as a inner join (select id from table order by id limit m, n) as b on a.id &#x3D; b.id order by a.id;<br>该查询同方式1一样，m的值可能很大，但由于内部的子查询只扫描了id字段，而非全表，所以性能要强于方式1，并且能够解决方式2和方式3不能解决的问题。</p>
+</li>
+<li><p>方式5：select * from table where id &gt; (select id from table order by id limit m, 1) limit n;<br>该查询同样是通过子查询扫描字段id，效果同方式4。但方式5的性能会略好于方式4，因为方式5不需要进行表的关联，而是一个简单的比较，在不知道上一页最大id的情况下，是比较推荐的用法。</p>
+</li>
+</ul>
+<center><font size="32">------赞助耶耶，加快更新！------</font></center>
+
+<p><img data-src="/mybook.github.io/images/donate_jpg.jpg"></p>
+<link rel="stylesheet" href="/mybook.github.io/css/spoiler.css" type="text/css"><script src="/mybook.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>三件套</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>系统监控-Prometheus&quot;好像&quot;不准确啊</title>
+    <url>/mybook.github.io/2024/05/24/Prometheus%E4%B8%8EGrafana/</url>
+    <content><![CDATA[<h1 id="Grafana"><a href="#Grafana" class="headerlink" title="Grafana"></a>Grafana</h1><h2 id="什么是Grafana？"><a href="#什么是Grafana？" class="headerlink" title="什么是Grafana？"></a>什么是Grafana？</h2><p>Grafana是一款功能强大的开源监控数据分析和可视化套件。它最初主要用于显示和监控Graphite指标数据，但随着时间的推移，其功能和应用范围得到了极大的扩展。Grafana的核心功能在于对基础设施和应用数据分析的时间序列数据进行可视化分析，使用户能够更直观地理解和分析数据。<strong>可以理解为一种前端展示</strong></p>
+<p><img data-src="/mybook.github.io/images/238945509252002.png"></p>
+<p>特点：</p>
+<ol>
+<li>展示方式：快速灵活的客户端图表，面板插件有许多不同方式的可视化指标和日志，官方库中具有丰富的仪表盘插件，比如热图、折线图、图表等多种展示方式；</li>
+<li>数据源：Graphite，InfluxDB，OpenTSDB，Prometheus，Elasticsearch，CloudWatch和KairosDB等；</li>
+<li>通知提醒：以可视方式定义最重要指标的警报规则，Grafana将不断计算并发送通知，在数据达到阈值时通过Slack、PagerDuty等获得通知；</li>
+<li>混合展示：在同一图表中混合使用不同的数据源，可以基于每个查询指定数据源，甚至自定义数据源；</li>
+<li>注释：使用来自不同数据源的丰富事件注释图表，将鼠标悬停在事件上会显示完整的事件元数据和标记；</li>
+<li>过滤器：Ad-hoc过滤器允许动态创建新的键&#x2F;值过滤器，这些过滤器会自动应用于使用该数据源的所有查询。</li>
+</ol>
+<p><a href="https://grafana.com/docs/grafana/latest/datasources/prometheus/">Grafana使用Prometheus数据源官方文档</a></p>
+<h1 id="Prometheus"><a href="#Prometheus" class="headerlink" title="Prometheus"></a>Prometheus</h1><p><a href="https://prometheus.wang/">Prometheus学习与实战</a></p>
+<p><strong>！！！Prometheus 的指标值，并非 100% 准确！！！</strong></p>
+<h2 id="可观测三角"><a href="#可观测三角" class="headerlink" title="可观测三角"></a>可观测三角</h2><p>在可观测的世界里，metrics（指标）、log（日志）、trace（调用链） 三足鼎立。有点<strong>类似分布式系统的CAP理论</strong></p>
+<p><img data-src="/mybook.github.io/images/375883109258991.png"></p>
+<ul>
+<li>metrics（指标）好似运动手表：24小时采样心率，并在心率超限时告警；</li>
+<li>log（日志）好似详细体检：输出厚厚一沓严密、精确的权威报告；</li>
+<li>trace（调用链）好似血管灌注：哪段血管堵了，只需看灌注造影，一目了然。</li>
+</ul>
+<p>Prometheus 所在的 metrics（指标） 领域，其目标是诊断整体健康状况，其手段通常是对原始数据先采样、再聚合，利用有限的信息，分析变化趋势；而并非像 log（日志）那样，翔实精确、事无巨细地，记录每一桩事件、每一条原始数据。</p>
+<h2 id="Prometheus做出的妥协"><a href="#Prometheus做出的妥协" class="headerlink" title="Prometheus做出的妥协"></a>Prometheus做出的妥协</h2><p>除了 metrics 领域自身的特性，Prometheus 毕竟处在一个条件有限的真实世界，它还要随时面临以下困难：</p>
+<ul>
+<li>自身硬件有限：不敢拼命计算，不敢无限存储；</li>
+<li>采样统计的局限性：稀稀拉拉、分布未知的样本；</li>
+<li>分布式的局限性：丢数据的网络、不靠谱的对端；<br>……</li>
+</ul>
+<p>Prometheus 需要在上述限制下，交出 not perfect、但是 good enough 的指标。于是就有了下述设计：</p>
+<ul>
+<li><strong>单次采样不重要，多次采样组成的时间序列才重要。所以，单次采样受阻，是可以无需重试、直接丢弃的。</strong></li>
+<li><strong>单点数值不重要，多点数值汇聚的变化趋势才重要。所以，单点数值是可以“无中生有”、”脑补”估算的。</strong></li>
+</ul>
+<h2 id="案例分解"><a href="#案例分解" class="headerlink" title="案例分解"></a>案例分解</h2><h3 id="rate-increase"><a href="#rate-increase" class="headerlink" title="rate&#x2F;increase"></a>rate&#x2F;increase</h3><p>在使用 rate 或者 increase 观测 counter 类型的指标增量时，经常碰到以下问题：</p>
+<ul>
+<li>每分钟新增的请求数，竟然是个小数？</li>
+<li>不仅是个小数，还比真实增量更大？</li>
+</ul>
+<p>Prometheus在没有踩中样本值做法是：naive 地假设所有样本点在该时间范围内是均匀分布的，然后按照这个均匀分布的线性规律，**<mark>脑补</mark>估算出边界上的采样点**。那么，补出来一些不准确的值，也就不足为奇了。</p>
+<p>其中脑补这一操作，使用的就是<strong>线性外推算法</strong>：rate&#x2F;increase[时间范围] 在计算该时间范围内的增量时，第一步要拿到该时间范围边界上（开始时刻和结束时刻）的样本点，相减得到差值。<strong>但是：在当前时间范围的边界，并不一定那么凑巧地有样本点存在。</strong></p>
+<p><strong>分析：</strong><br>计算一分钟之内，errors_total 值的增量，也即 increase(errors_total[1m])。要计算 [1m] 的时间范围&#x2F;取样窗口内的 increase，在最理想的情况下，Prometheus 根本不想关心这个窗口内的其他数据，而只需从窗口左边界取第一个点，右边界取最后一个点，相减即可：</p>
+<p><img data-src="/mybook.github.io/images/440064009267024.png"></p>
+<p><strong>但是，能保证每次都能踩中自己上报的值吗？答案很显然不能</strong></p>
+<p><img data-src="/mybook.github.io/images/222244109259693.png"></p>
+<p>取窗口覆盖范围内的第一个点和最后一个点，计算斜率，并按照该斜率将直线延伸至窗口边界，无中生有地“脑补”出虚拟的两个“样本点”，即可相减计算 increase 了：</p>
+<p><img data-src="/mybook.github.io/images/249594409256248.png"></p>
+<p>如上图：用绿圈圈所代表的“虚拟样本”相减，得到的 increase 1.3 不仅是个小数，还比实际值偏大，也就不足为奇了。</p>
+<h3 id="histogram"><a href="#histogram" class="headerlink" title="histogram"></a>histogram</h3><h3 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h3><h2 id="PromQL"><a href="#PromQL" class="headerlink" title="PromQL"></a>PromQL</h2><center><font size="32">------赞助耶耶，加快更新！------</font></center>
+
+<p> <img data-src="/mybook.github.io/images/donate_jpg.jpg"></p>
+<link rel="stylesheet" href="/mybook.github.io/css/spoiler.css" type="text/css"><script src="/mybook.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>奇闻轶事</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Redis</title>
     <url>/mybook.github.io/2024/05/17/Redis/</url>
     <content><![CDATA[<h1 id="Redis数据结构"><a href="#Redis数据结构" class="headerlink" title="Redis数据结构"></a>Redis数据结构</h1><p>常见的有五种：String（字符串），Hash（哈希），List（列表），Set（集合）、Zset（有序集合）。</p>
@@ -1553,6 +1553,40 @@ new对数组的支持体现在它会分别调用构造函数函数初始化每�
 <link rel="stylesheet" href="/mybook.github.io/css/spoiler.css" type="text/css"><script src="/mybook.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
         <category>中间件</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>拼手气红包只抢了0.01，阴谋！</title>
+    <url>/mybook.github.io/2024/05/24/%E7%BA%A2%E5%8C%85%E7%AE%97%E6%B3%95%E4%B8%8E%E9%9A%8F%E6%9C%BA/</url>
+    <content><![CDATA[<h1 id="抢到红包0-01元，怎么搞的？"><a href="#抢到红包0-01元，怎么搞的？" class="headerlink" title="抢到红包0.01元，怎么搞的？"></a>抢到红包0.01元，怎么搞的？</h1><p><strong>抢红包时你为什么只抢到0.01，拼手气红包的随机是如何运作的？</strong><br>最初的随机算法中，领取越早获得大额红包几率越高，为了避免抢红包变成一个拼手速的游戏，后来的随机算法也对随机范围区间进行了一定调整。</p>
+<h2 id="普通随机"><a href="#普通随机" class="headerlink" title="普通随机"></a>普通随机</h2><p>剩余值随机红包算法 ，一般都是使用剩余值在计算一把。用余下的值为最大区间进行随机，但可能不均匀，有些人一把随到99，下面很多人都没得随机了。</p>
+<p>优点：逻辑简单，<br>缺点：随机区间步步减少，可以明显看出随机值的递减特性，做抢红包体验很差，对后面玩家极不公平，且容易被抓到规律，造成舆论不满。</p>
+<h2 id="二倍均值算法"><a href="#二倍均值算法" class="headerlink" title="二倍均值算法"></a>二倍均值算法</h2><p>该算法的核心思想：<br>在每次剩余的总金额和剩余人数的基础上，执行一个操作：将剩余总金额除以剩余人数，然后乘以2，得到一个边界值E。接着，在从0到E的随机区间内生成一个随机金额R，此时总金额更新为M-R，剩余人数更新为N-1。这个过程重复进行，直到最终剩余人数N-1为0，即所有随机数已经产生完毕。</p>
+<p><img data-src="/mybook.github.io/images/435884609258196.png"></p>
+<ol>
+<li>剩余红包金额为M，剩余人数为N，每次抢到的金额 &#x3D; 随机区间 （0， M &#x2F; N X 2），</li>
+<li>假设有10个人，红包总额100元。</li>
+<li>100&#x2F;10X2 &#x3D; 20, 所以第一个人的随机范围是（0，20 )，平均可以抢到10元。</li>
+<li>假设第一个人随机到10元，那么剩余金额是100-10 &#x3D; 90 元。</li>
+<li>90&#x2F;9X2 &#x3D; 20, 所以第二个人的随机范围同样是（0，20 )，平均可以抢到10元。</li>
+<li>假设第二个人随机到10元，那么剩余金额是90-10 &#x3D; 80 元。</li>
+<li>80&#x2F;8X2 &#x3D; 20, 所以第三个人的随机范围同样是（0，20 )，平均可以抢到10元。</li>
+<li>以此类推，每一次随机范围的均值是相等的。</li>
+</ol>
+<p>此外，二倍均值算法还基于一个公平的概率策略：即每个人抢到J &#x2F; N的金额的概率是相同的。例如，如果有一个100元的红包要发给10个人，那么最公平的策略是使每个人抢到10元的概率相同。通过计算随机数区间上界U &#x3D; J &#x2F; N * 2，并在(0,U)的区间内生成第一个随机数金额M，然后继续生成第二个、第三个等随机金额，直到最后一个红包金额被生成。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> List&lt;Double&gt; <span class="title function_">doubleMeanMethod</span><span class="params">(<span class="type">double</span> money,<span class="type">int</span> number)</span>&#123;</span><br><span class="line">		List&lt;Double&gt; result = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;Double&gt;();</span><br><span class="line">		<span class="keyword">if</span>(money&lt;<span class="number">0</span>&amp;&amp;number&lt;<span class="number">1</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">		<span class="type">double</span> amount,sum=<span class="number">0</span>;</span><br><span class="line">		<span class="type">int</span> remainingNumber=number;</span><br><span class="line">		<span class="type">int</span> i=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span>(remainingNumber&gt;<span class="number">1</span>)&#123;</span><br><span class="line">			amount= nextDouble(<span class="number">0.01</span>,<span class="number">2</span>*(money/remainingNumber));</span><br><span class="line">			sum+=amount;</span><br><span class="line">			System.out.println(<span class="string">&quot;第&quot;</span>+i+<span class="string">&quot;个人领取的红包金额为：&quot;</span>+format(amount));</span><br><span class="line">			money -= amount;</span><br><span class="line">			remainingNumber--;</span><br><span class="line">			result.add(amount);</span><br><span class="line">			i++;</span><br><span class="line">		&#125;</span><br><span class="line">		result.add(money);</span><br><span class="line">		System.out.println(<span class="string">&quot;第&quot;</span>+i+<span class="string">&quot;个人领取的红包金额为：&quot;</span>+format(money));</span><br><span class="line">		sum+=money;</span><br><span class="line">		System.out.println(<span class="string">&quot;验证发出的红包总金额为：&quot;</span>+format(sum));</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">return</span> result;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<p>优点：</p>
+<ul>
+<li>它能够保证每次生成的随机金额R的随机性和平等性，同时由于每次总金额M的更新采用递减方式（即M&#x3D;M-R），可以确保最终产生的所有随机金额之和等于初始的总金额。</li>
+<li>这种算法通过在每次迭代中更新总金额和剩余人数，确保了每个人获得金额的平均值相等，避免了因抢红包的顺序不同而导致的分配不均问题。</li>
+</ul>
+<h1 id="计算机到底是真随机还是假随机？"><a href="#计算机到底是真随机还是假随机？" class="headerlink" title="计算机到底是真随机还是假随机？"></a>计算机到底是真随机还是假随机？</h1><center><font size="32">------赞助耶耶，加快更新！------</font></center>
+
+<p> <img data-src="/mybook.github.io/images/donate_jpg.jpg"></p>
+<link rel="stylesheet" href="/mybook.github.io/css/spoiler.css" type="text/css"><script src="/mybook.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <categories>
+        <category>奇闻轶事</category>
       </categories>
   </entry>
   <entry>
@@ -2465,40 +2499,6 @@ sizeof(A) &#x3D; 8;sizeof(B) &#x3D; 12。</li>
 <link rel="stylesheet" href="/mybook.github.io/css/spoiler.css" type="text/css"><script src="/mybook.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <categories>
         <category>三件套</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>拼手气红包只抢了0.01，阴谋！</title>
-    <url>/mybook.github.io/2024/05/24/%E7%BA%A2%E5%8C%85%E7%AE%97%E6%B3%95%E4%B8%8E%E9%9A%8F%E6%9C%BA/</url>
-    <content><![CDATA[<h1 id="抢到红包0-01元，怎么搞的？"><a href="#抢到红包0-01元，怎么搞的？" class="headerlink" title="抢到红包0.01元，怎么搞的？"></a>抢到红包0.01元，怎么搞的？</h1><p><strong>抢红包时你为什么只抢到0.01，拼手气红包的随机是如何运作的？</strong><br>最初的随机算法中，领取越早获得大额红包几率越高，为了避免抢红包变成一个拼手速的游戏，后来的随机算法也对随机范围区间进行了一定调整。</p>
-<h2 id="普通随机"><a href="#普通随机" class="headerlink" title="普通随机"></a>普通随机</h2><p>剩余值随机红包算法 ，一般都是使用剩余值在计算一把。用余下的值为最大区间进行随机，但可能不均匀，有些人一把随到99，下面很多人都没得随机了。</p>
-<p>优点：逻辑简单，<br>缺点：随机区间步步减少，可以明显看出随机值的递减特性，做抢红包体验很差，对后面玩家极不公平，且容易被抓到规律，造成舆论不满。</p>
-<h2 id="二倍均值算法"><a href="#二倍均值算法" class="headerlink" title="二倍均值算法"></a>二倍均值算法</h2><p>该算法的核心思想：<br>在每次剩余的总金额和剩余人数的基础上，执行一个操作：将剩余总金额除以剩余人数，然后乘以2，得到一个边界值E。接着，在从0到E的随机区间内生成一个随机金额R，此时总金额更新为M-R，剩余人数更新为N-1。这个过程重复进行，直到最终剩余人数N-1为0，即所有随机数已经产生完毕。</p>
-<p><img data-src="/mybook.github.io/images/435884609258196.png"></p>
-<ol>
-<li>剩余红包金额为M，剩余人数为N，每次抢到的金额 &#x3D; 随机区间 （0， M &#x2F; N X 2），</li>
-<li>假设有10个人，红包总额100元。</li>
-<li>100&#x2F;10X2 &#x3D; 20, 所以第一个人的随机范围是（0，20 )，平均可以抢到10元。</li>
-<li>假设第一个人随机到10元，那么剩余金额是100-10 &#x3D; 90 元。</li>
-<li>90&#x2F;9X2 &#x3D; 20, 所以第二个人的随机范围同样是（0，20 )，平均可以抢到10元。</li>
-<li>假设第二个人随机到10元，那么剩余金额是90-10 &#x3D; 80 元。</li>
-<li>80&#x2F;8X2 &#x3D; 20, 所以第三个人的随机范围同样是（0，20 )，平均可以抢到10元。</li>
-<li>以此类推，每一次随机范围的均值是相等的。</li>
-</ol>
-<p>此外，二倍均值算法还基于一个公平的概率策略：即每个人抢到J &#x2F; N的金额的概率是相同的。例如，如果有一个100元的红包要发给10个人，那么最公平的策略是使每个人抢到10元的概率相同。通过计算随机数区间上界U &#x3D; J &#x2F; N * 2，并在(0,U)的区间内生成第一个随机数金额M，然后继续生成第二个、第三个等随机金额，直到最后一个红包金额被生成。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> List&lt;Double&gt; <span class="title function_">doubleMeanMethod</span><span class="params">(<span class="type">double</span> money,<span class="type">int</span> number)</span>&#123;</span><br><span class="line">		List&lt;Double&gt; result = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;Double&gt;();</span><br><span class="line">		<span class="keyword">if</span>(money&lt;<span class="number">0</span>&amp;&amp;number&lt;<span class="number">1</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">		<span class="type">double</span> amount,sum=<span class="number">0</span>;</span><br><span class="line">		<span class="type">int</span> remainingNumber=number;</span><br><span class="line">		<span class="type">int</span> i=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span>(remainingNumber&gt;<span class="number">1</span>)&#123;</span><br><span class="line">			amount= nextDouble(<span class="number">0.01</span>,<span class="number">2</span>*(money/remainingNumber));</span><br><span class="line">			sum+=amount;</span><br><span class="line">			System.out.println(<span class="string">&quot;第&quot;</span>+i+<span class="string">&quot;个人领取的红包金额为：&quot;</span>+format(amount));</span><br><span class="line">			money -= amount;</span><br><span class="line">			remainingNumber--;</span><br><span class="line">			result.add(amount);</span><br><span class="line">			i++;</span><br><span class="line">		&#125;</span><br><span class="line">		result.add(money);</span><br><span class="line">		System.out.println(<span class="string">&quot;第&quot;</span>+i+<span class="string">&quot;个人领取的红包金额为：&quot;</span>+format(money));</span><br><span class="line">		sum+=money;</span><br><span class="line">		System.out.println(<span class="string">&quot;验证发出的红包总金额为：&quot;</span>+format(sum));</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">return</span> result;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-<p>优点：</p>
-<ul>
-<li>它能够保证每次生成的随机金额R的随机性和平等性，同时由于每次总金额M的更新采用递减方式（即M&#x3D;M-R），可以确保最终产生的所有随机金额之和等于初始的总金额。</li>
-<li>这种算法通过在每次迭代中更新总金额和剩余人数，确保了每个人获得金额的平均值相等，避免了因抢红包的顺序不同而导致的分配不均问题。</li>
-</ul>
-<h1 id="计算机到底是真随机还是假随机？"><a href="#计算机到底是真随机还是假随机？" class="headerlink" title="计算机到底是真随机还是假随机？"></a>计算机到底是真随机还是假随机？</h1><center><font size="32">------赞助耶耶，加快更新！------</font></center>
-
-<p> <img data-src="/mybook.github.io/images/donate_jpg.jpg"></p>
-<link rel="stylesheet" href="/mybook.github.io/css/spoiler.css" type="text/css"><script src="/mybook.github.io/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <categories>
-        <category>奇闻轶事</category>
       </categories>
   </entry>
   <entry>

@@ -206,7 +206,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-05-24 10:04:20 / 修改时间：10:14:46" itemprop="dateCreated datePublished" datetime="2024-05-24T10:04:20+08:00">2024-05-24</time>
+              <time title="创建时间：2024-05-24 10:04:20 / 修改时间：10:25:59" itemprop="dateCreated datePublished" datetime="2024-05-24T10:04:20+08:00">2024-05-24</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -267,7 +267,7 @@
 <li>每分钟新增的请求数，竟然是个小数？</li>
 <li>不仅是个小数，还比真实增量更大？</li>
 </ul>
-<p>Prometheus在没有踩中样本值做法是：naive 地假设所有样本点在该时间范围内是均匀分布的，然后按照这个均匀分布的线性规律，**”脑补”估算出边界上的采样点**。那么，补出来一些不准确的值，也就不足为奇了。</p>
+<p>Prometheus在没有踩中样本值做法是：naive 地假设所有样本点在该时间范围内是均匀分布的，然后按照这个均匀分布的线性规律，**<mark>脑补</mark>估算出边界上的采样点**。那么，补出来一些不准确的值，也就不足为奇了。</p>
 <p>其中脑补这一操作，使用的就是<strong>线性外推算法</strong>：rate&#x2F;increase[时间范围] 在计算该时间范围内的增量时，第一步要拿到该时间范围边界上（开始时刻和结束时刻）的样本点，相减得到差值。<strong>但是：在当前时间范围的边界，并不一定那么凑巧地有样本点存在。</strong></p>
 <p><strong>分析：</strong><br>计算一分钟之内，errors_total 值的增量，也即 increase(errors_total[1m])。要计算 [1m] 的时间范围&#x2F;取样窗口内的 increase，在最理想的情况下，Prometheus 根本不想关心这个窗口内的其他数据，而只需从窗口左边界取第一个点，右边界取最后一个点，相减即可：</p>
 <p><img data-src="/mybook.github.io/images/440064009267024.png"></p>
